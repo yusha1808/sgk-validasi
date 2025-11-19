@@ -1,0 +1,225 @@
+/* Gaya dasar untuk body dan font */
+body {
+  font-family: "Titillium Web", sans-serif;
+  background-color: #f5f5f5; /* Latar belakang abu-abu sangat muda */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* Gaya untuk kontainer utama sertifikat */
+.certificate-container {
+  width: 800px; /* Ukuran lebar sertifikat */
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding-bottom: 0; /* Padding diatur di bagian lain */
+  min-height: 100px; /* Asumsi ukuran A4 vertikal */
+}
+
+/* --- Header (SGK Certified & Background Visual) --- */
+.certificate-header {
+  position: relative;
+  height: 180px;
+}
+
+.sgk-certified-visual {
+  /* Meniru tampilan gambar bumi dan logo SGK Certified */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Gunakan background-image jika tersedia gambar bumi */
+  background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3_Wp8y1Znc5dDe8qYhQmautkuFTZ0Nc5BiMVXib8Inzqo9PJ2aRJ4jg7V8IJxMic_Oa6FlAb9XwYMxdNlahnbJcxEHHm_DRdOFr-LJP80Z_77m0eWA-zC0VmtnX-483HOL1KqA4_xBTKaMwrAQ45lReGi2zJiblLoxGMmv9yvcObXaAOmiOghjxAMo0q3/s320/background.png"); /* Ganti dengan gambar latar belakang bumi */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sgk-certified-logo {
+  /* Mereplikasi logo kuning-biru */
+  padding: 10px 20px;
+  border-radius: 5px;
+  /* Tambahkan gaya untuk meniru bentuk lencana (lebih baik dengan gambar) */
+}
+
+/* --- Validation Title Section --- */
+.validation-title-section {
+  background-color: #003366; /* Warna biru tua */
+  padding: 1px 0;
+  text-align: center;
+  margin-top: -1px; /* Untuk menyambung dengan header */
+}
+
+.validation-title {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* --- Intro Text --- */
+.intro-text {
+  padding: 30px 30px 20px 30px;
+  text-align: center;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #474747;
+}
+
+.intro-text p {
+  margin: 0;
+}
+
+/* --- Tabel Detail Pelatihan --- */
+.training-details-section {
+  padding: 0 30px;
+  margin-bottom: 30px;
+}
+
+.training-details-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  color: #474747;
+}
+
+.training-details-table tr {
+  border: 1px solid #ccc; /* Border di sekeliling baris */
+}
+
+.training-details-table td {
+  padding: 10px 15px;
+}
+
+.training-details-table .label {
+  width: 30%;
+  font-weight: bold;
+  background-color: #f7f7f7; /* Latar belakang abu-abu muda untuk label */
+  border-right: 1px solid #ccc;
+}
+
+.training-details-table .value {
+  width: 70%;
+  text-align: left;
+}
+
+.training-details-table .participant-name,
+.certificate-date,
+.training-title,
+.training-details-table .certificate-number {
+  font-weight: bold;
+  color: #003366;
+}
+
+/* --- Statement Text --- */
+.statement-text {
+  padding: 0px 30px 20px 30px;
+    text-align: center;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #474747;
+}
+
+.statement-text p {
+  margin-bottom: 20px;
+}
+
+.statement-text .register-number {
+  display: block;
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #003366; /* Warna biru untuk nomor register */
+}
+
+.statement-text .organizer-info {
+  padding: 0px 30px 20px 30px;
+    text-align: center;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #474747;
+}
+
+/* --- Footer --- */
+.certificate-footer {
+  margin-top: 80pk; /* Dorong footer ke bawah */
+  background-color: #003366; /* Warna biru tua */
+  color: #fff;
+  padding: 20px 50px 0 50px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  padding-bottom: 15px;
+}
+
+.footer-logo-area p {
+  margin: 0;
+  text-align: center;
+}
+
+.footer-logo-area .sgk-brand {
+  font-size: 50px;
+  font-weight: bold;
+  letter-spacing: -2px;
+}
+
+.footer-logo-area .sgk-consultant {
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-top: -10px;
+}
+
+.footer-logo-area .company-name {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.footer-info-area {
+  display: flex;
+  align-items: flex-start;
+}
+
+
+.contact-details p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.4;
+  text-align: right;
+}
+
+.contact-details .address {
+  font-size: 11px;
+}
+
+
+/* --- Footer Bottom Line (ISO list) --- */
+.footer-bottom-line {
+  padding: 10px 0;
+  text-align: center;
+}
+
+.footer-bottom-line p {
+  margin: 0;
+  font-size: 9px;
+  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Stylings for the search icon lookalike (optional, for visual fidelity) */
+/* .search-icon-lookalike {
+    position: absolute;
+    right: 50px;
+    top: -10px;
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.3);
+} */
